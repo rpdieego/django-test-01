@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Alpha Sheep Clound INC</title>
+</head>
+<body>
+    <h1>Alpha Sheep Cloud INC</h1>
+    <h3>Teste 01010101</h3>
+    <ul>
+        <li>views.py</li>
+        <li>urls.py</li>
+        <li>templates.py</li>
+    </ul>
+    <br>
+    <a href="{% url 'about' %}">Click to go to contact page</a>
+    <br>
+    <a href="{% url 'result' %}">Click to go to form page</a>
+    <br>
+    <form action="{% url 'result' %}">
+        {% csrf_token %}
+            <input type="text" name="test_input">
+            <input type="submit" value="Click me">
+    </form>
+    <br>
+
+    <button onclick="buttonFunc()">Click here to test JS</button>
+
+
+
+
+    <!-- script -->
+    <script src="{% static 'main.js' %}"></script>
+</body>
+</html>

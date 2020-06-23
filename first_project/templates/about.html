@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Sheep Cloud</title>
+</head>
+<body>
+    <h1>About:</h1>
+    <br>
+    <h3>Man 01</h3>
+    <img id='profileImg' src="{% static 'profile_DR.png' %}" alt="">
+    <ul>
+        <li>Phone: oifjsiaojds</li>
+        <li>Address: imobi man</li>
+    </ul>
+    <br>
+    <h3>Man 02</h3>
+    <img id='profileImg' src="{% static 'profile_Ale.png' %}" alt="">
+    <ul>
+        <li>Phone: oaisjfoasjfa</li>
+        <li>Address: imobi man</li>
+    </ul>
+    <br>
+    <a href="{% url 'index' %}">Click here to go back to the home page</a>
+
+    <!-- script -->
+    <script src="{% static 'main.js' %}"></script>
+    
+</body>
+</html>
